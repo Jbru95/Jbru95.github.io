@@ -7,10 +7,12 @@ import { NavbarComponent } from './components/navbar';
 import { SideBarInfoComponent } from './components/sidebarInfo';
 import { ProjectsComponent } from './components/projects'; 
 import { HomeComponent } from './components/home';
+import { ResumeComponent} from './components/resume';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'projects', component: ProjectsComponent},
+  { path: 'resume', component: ResumeComponent },
   { path: '**', redirectTo: ''}
 ];
 @NgModule({
@@ -19,7 +21,8 @@ const appRoutes: Routes = [
     NavbarComponent,
     SideBarInfoComponent,
     ProjectsComponent,
-    HomeComponent
+    HomeComponent,
+    ResumeComponent
   ],
   imports: [
     RouterModule.forRoot(
