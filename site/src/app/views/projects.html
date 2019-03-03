@@ -1,1 +1,25 @@
-<p>Projects</p>
+<div style='display: inline;'> 
+    <h1 style='display: inline;'>Projects</h1>
+    <p *ngIf='this.searchedProjectNumber != 0 && this.searchedProjectNumber != this.allProjects.length' class='text-danger' style='display: inline; padding-left: 2%;'>{{searchedProjectNumber}} results shown</p>
+    <button class="btn btn-secondary my-2 my-sm-0 float-right" (click)="searchProjects()">Search</button>
+    <div class="form-inline my-2 my-lg-0 float-right" style='display: inline;'>
+        <input class="form-control mr-sm-2" id="projectSearchTermInput" type="text" placeholder="Search" (keyup)="onSearchKeyUp()">
+    </div>
+</div>
+<div class='card border-primary' style='margin-top: 24px;' *ngFor='let projectElem of this.projects'>
+    <div class='card-header'>
+        {{projectElem.name}}
+        <span *ngFor='let badge of projectElem.techs' class='badge badge-info float-right' style="margin-left: 6px;">{{badge}}</span>
+    </div>
+    <div class='card-body'>
+        <div class='row'>
+            <div class='col-3 col-xs-3'>
+                <img src='assets/headshot.jpg'>
+            </div>
+            <div class='col-9 col-xs-9'>
+                <p class='card-text'>{{projectElem.description}}</p>
+            </div>
+        </div>
+
+    </div>
+</div>
