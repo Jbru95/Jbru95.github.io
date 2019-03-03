@@ -5,6 +5,8 @@ export interface ProjectInterface {
     techs: Array<string>;
     imagePath: string;
     searchTerms: Array<string>;
+    closingLink: any;
+    isHosted: boolean;
 }
 
 export class Project {
@@ -14,6 +16,8 @@ export class Project {
     techs: Array<string> = [];
     imagePath: string;
     searchTerms: Array<string> = [];
+    closingLink: any;
+    isHosted: boolean;
 
     constructor(obj: ProjectInterface) {
         this.name = obj.name;
@@ -26,5 +30,7 @@ export class Project {
         obj.searchTerms.forEach ( el2 => {
             this.searchTerms.push(el2);
         })
+        this.closingLink = obj.closingLink;
+        this.isHosted = obj.isHosted;
     }
 }

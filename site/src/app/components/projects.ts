@@ -21,35 +21,82 @@ export class ProjectsComponent {
         const ProjectIntArray: ProjectInterface[] = [
             {
                 name: 'kiNG',
-                description: 'Chess engine written in Angular, supports both local multiplayer and single player AI modes',
+                description: 'Chess engine written in TypeScript, using Angular 6 CLI and BootStrap 4, with both local multiplayer and single player AI modes. Supports game tracking technology, allowing the user to rewind and see past moves during the game, as well as timed modes.',
                 link: 'https://jbru95.github.io/kiNG',
-                imagePath: '',
-                techs: ['TypeScript', 'Angular 6', 'BootStrap'],
-                searchTerms: ['Chess', 'kiNG', 'TypeScript', 'Angular 6', 'BootStrap', 'multiplayer', 'AI', 'game']
+                imagePath: 'assets/king_screen.PNG',
+                techs: ['TypeScript', 'Angular 6', 'BootStrap', 'CSS', 'HTML', ],
+                searchTerms: ['Chess', 'kiNG', 'TypeScript', 'Angular 6', 'BootStrap', 'multiplayer', 'AI', 'game', 'CSS', 'HTML'],
+                closingLink: null,
+                isHosted: true
             },
             {
                 name: 'Mastermind',
-                description: 'Web version of the classis boardgame, Mastermind written in Javascript, utilizing JQuery, Less styles, and Grunt',
+                description: 'Web version of the classis boardgame, Mastermind. Written in Javascript, utilizing JQuery, Less styles, and Grunt. Pick sets of colored marbles to get closer to your goal. Using the hints provided, can you match the Mastermind?',
                 link: 'https://jbru95.github.io/Mastermind',
-                imagePath: '',
+                imagePath: 'assets/mastermind_screen.PNG',
                 techs: ['JavaScript', 'JQuery', 'CSS', 'HTML', 'Grunt', 'Less'],
-                searchTerms: ['Mastermind', 'JavaScript', 'JQuery', 'CSS', 'HTML', 'Grunt', 'Less', 'game', 'singleplayer']
+                searchTerms: ['Mastermind', 'JavaScript', 'JQuery', 'CSS', 'HTML', 'Grunt', 'Less', 'game', 'singleplayer'],
+                closingLink: null,
+                isHosted: true
+            },
+            {
+                name: 'Advent Of Code 2018',
+                description: 'Month-long programming challenge, started December 2018. Challenges cover a wide array of computer science topics, including: Programming Fundamentals, Data Structures(Stacks, Trees, Graphs, etc.), Algorithms, Time and Space Complexity Optimization, Problem Solving, Image Processing and more. Solutions are written with development speed, problem solving accuray and time/memory management in mind. Solutions are light-weight Python files and output answers and infomation to the command line. Challenges from ',
+                link: 'https://github.com/Jbru95/AdventOfCode2018',
+                imagePath: 'assets/advent_screen.PNG',
+                techs: ['Python 3'],
+                searchTerms: ['Python 3 challenge programming advent of code AdventOfCode 2018 data structures and algorithms DS&A stack tree graph time complxity space complexity problem solving image processing'],
+                closingLink: {
+                    name: 'Advent Of Code',
+                    link: 'https://adventofcode.com/'
+                },
+                isHosted: false
             },
             {
                 name: 'Closest Airplane',
-                description: 'Simple Command line progam to return information on the closest inflight airplanes to a user input latitude and longitude, written in C#, utlizing REST APIs',
-                link: '',
-                imagePath: '',
+                description: 'Simple Command line progam to return information on the closest inflight airplanes to a user input latitude and longitude, written in C#, utlizing REST APIs from ',
+                link: 'https://github.com/Jbru95/ClosestAirplane',
+                imagePath: 'assets/closestPlane_screen.png',
                 techs: ['C#', 'REST APIs'],
-                searchTerms: ['Closest Airplane', 'C#', 'REST APIs']
+                searchTerms: ['Closest Airplane', 'C#', 'REST APIs'],
+                closingLink: {
+                    name: 'Open Sky Network',
+                    link: 'https://opensky-network.org'
+                },
+                isHosted: false
+            },
+            {
+                name: 'Hash Table Comparison',
+                description: 'HashTable class and small script written in Python 3 to show the powerful constant ( O(1) ) lookup/deletion time of Hash Tables compared to typical python lists, utilizes seperate chaining to deal with collisions when they do occur. Created for Computer Science tutoring/educational purposes.',
+                link: 'https://github.com/Jbru95/HashTableComparison',
+                imagePath: 'assets/python_logo.png',
+                techs: ['Python 3'],
+                searchTerms: ['Python 3', 'Hash Table Comparison', 'Data Structures and Algorithms', 'DS&A', 'constant lookup time complexity'],
+                closingLink: null,
+                isHosted: false
+            },
+            {
+                name: 'Felis Investigations',
+                description: 'Private Investigations Website with Login Credentials Verification(using hashed and salted passwords), SQL table manipulation and display via PDO. Entire project written in PHP w/ HTML and CSS to format pages. All pages written with Model-View-Controller pattern, and also utilizes Post-Redirect-Get pattern where appropriate.',
+                link: 'https://github.com/Jbru95/Felis-Investigations',
+                imagePath: 'assets/php_logo.png',
+                techs: ['MySQL', 'HTML', 'Less', 'PHP', 'MVC',  'PDO'],
+                searchTerms: ['cat', 'pdo', 'mySQL', 'database', 'hashed and salted passwords', 'php html css mvc model view controller post redirect get pattern web Felis Investigations'],
+                closingLink: null,
+                isHosted: false
             },
             {
                 name: 'Bummer',
-                description: 'Twist on the classis board game Sorry, written mainly in PHP, utlizes extensive server side scripting, as well as JavaScript, Websockets and MySQL databases for online multiplayer',
-                link: '',
-                imagePath: '',
-                techs: ['JavaScript', 'PHP', 'Websockets'],
-                searchTerms: ['Bummer', 'JavaScript', 'PHP', 'Websockets', 'Sorry', 'multiplayer', 'game']
+                description: 'Twist on the classic board game Sorry, written mainly in PHP and JavaScript, utlizes extensive server side scripting to control Users, Game Lobbies, Multiplayer Refreshing via WebSockets, and Turn and Board Management using MySQL Databases. Front-end interface created using almost exclusively HTML, CSS and PHP. For a full JavaScript version of this project, please see ',
+                link: 'https://github.com/Jbru95/BummerPHP',
+                imagePath: 'assets/bummer.png',
+                techs: ['JavaScript', 'PHP', 'Websockets', 'CSS', 'HTML', 'MySQL'],
+                searchTerms: ['Bummer', 'JavaScript', 'PHP', 'Websockets', 'Sorry', 'multiplayer', 'game', 'CSS', "HTML", 'sql database mysql pdo multiplayer singleplayer refresh front-end back-end'],
+                closingLink: {
+                    name: 'BummerJS',
+                    link: 'https://github.com/Jbru95/BummerJS'
+                },
+                isHosted: false
             }
         ];
         
