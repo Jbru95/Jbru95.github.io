@@ -69,7 +69,7 @@ export class ProjectsComponent {
         this.searchedProjectNumber = this.projects.length;
     }
 
-    searchProjects(val: any): void {
+    searchProjects(): void {
         this.searchTerm = $('#projectSearchTermInput')[0].value.toLowerCase();
         // console.log(this.searchTerm);
 
