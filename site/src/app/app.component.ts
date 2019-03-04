@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'Jayson Armbruster';
 
-  constructor(private router: Router){
+  constructor(public router: Router){
     console.log(this.router.url);
   }
 }
