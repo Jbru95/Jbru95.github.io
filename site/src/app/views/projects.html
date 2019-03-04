@@ -1,11 +1,14 @@
-<div style='display: inline;'> 
-    <h1 style='display: inline;'>Projects</h1>
-    <p *ngIf='this.searchedProjectNumber != 0 && this.searchedProjectNumber != this.allProjects.length' class='text-danger' style='display: inline; padding-left: 2%;'>{{searchedProjectNumber}} results shown</p>
-    <button class="btn btn-secondary my-2 my-sm-0 float-right" (click)="searchProjects()">Search</button>
-    <div class="form-inline my-2 my-lg-0 float-right" style='display: inline;'>
-        <input class="form-control mr-sm-2" id="projectSearchTermInput" type="text" placeholder="Search" (keyup)="onSearchKeyUp()">
+<div class='row'>
+    <div class='col-xs-12 col-md-6'>
+        <h1 style='display: inline;'>Projects</h1>
+        <p *ngIf='this.searchedProjectNumber != 0 && this.searchedProjectNumber != this.allProjects.length' class='text-danger' style='display: inline; padding-left: 2%;'>{{searchedProjectNumber}} results shown</p>
+    </div>
+    <div class="col-xs-12 col-md-6 form-inline float-right" style='display: inline;'>
+        <button class="btn btn-secondary float-right" (click)="searchProjects()">Search</button>
+        <input class="form-control mr-1 float-right" id="projectSearchTermInput" type="text" placeholder="Search" (keyup)="onSearchKeyUp()">
     </div>
 </div>
+
 <div class='card border-primary' style='margin-top: 24px;' *ngFor='let projectElem of this.projects'>
     <div class='card-header'>
         <h3 style='margin-bottom: 0;'>
