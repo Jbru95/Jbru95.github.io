@@ -3,7 +3,7 @@
         <h1 style='display: inline;'>Projects</h1>
         <p *ngIf='this.searchedProjectNumber != 0 && this.searchedProjectNumber != this.allProjects.length' class='text-danger' style='display: inline; padding-left: 2%;'>{{searchedProjectNumber}} results shown</p>
     </div>
-    <div class="col-xs-12 col-md-6 form-inline float-right" style='display: inline;'>
+    <div class="col-xs-12 col-md-6 form-inline float-right" style='display: inline; padding-top: 16px;'>
         <button class="btn btn-secondary float-right" (click)="searchProjects()">Search</button>
         <input class="form-control mr-1 float-right" id="projectSearchTermInput" type="text" placeholder="Search" (keyup)="onSearchKeyUp()">
     </div>
@@ -13,8 +13,8 @@
     <div class='card-header'>
         <h3 style='margin-bottom: 0;'>
             <a href='{{projectElem.link}}' target="_blank" >{{projectElem.name}}</a>
-            <span *ngFor='let badge of projectElem.techs' class='badge badge-info float-right' style="margin-left: 6px; vertical-align: middle">{{badge}}</span>
-            <span *ngIf='projectElem.isHosted' class='badge badge-danger float-right' style="margin-left: 6px; vertical-align: middle"><a href='{{projectElem.link}}' target='_blank'>Hosted</a></span>
+            <span *ngFor='let badge of projectElem.techs' class='badge badge-primary float-right' style="margin-left: 6px; margin-bottom: 2px; vertical-align: middle">{{badge}}</span>
+            <span *ngIf='projectElem.isHosted' class='badge badge-danger float-right' style="margin-left: 6px; vertical-align: middle"><a style='color: white;' href='{{projectElem.link}}' target='_blank'>Hosted</a></span>
         </h3>
         
     </div>

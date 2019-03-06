@@ -41,10 +41,10 @@ export class ProjectsComponent {
             },
             {
                 name: 'Advent Of Code 2018',
-                description: 'Month-long programming challenge, started December 2018. Challenges cover a wide array of computer science topics, including: Programming Fundamentals, Data Structures(Stacks, Trees, Graphs, etc.), Algorithms, Time and Space Complexity Optimization, Problem Solving, Image Processing and more. Solutions are written with development speed, problem solving accuray and time/memory management in mind. Solutions are light-weight Python files and output answers and infomation to the command line. Challenges from ',
+                description: 'Month-long programming challenge, started December 2018. Challenges cover a wide array of computer science topics, including: Programming Fundamentals, Data Structures(Stacks, Trees, Graphs, etc.), Algorithms, Time and Space Complexity Optimization, Problem Solving, Image Processing and more. Solutions are written with development speed, problem solving accuracy and time/memory management in mind. Solutions are light-weight Python files and output answers and infomation to the command line. Challenges from ',
                 link: 'https://github.com/Jbru95/AdventOfCode2018',
                 imagePath: 'assets/advent_screen.PNG',
-                techs: ['Python 3'],
+                techs: ['Python 3', 'DS+A'],
                 searchTerms: ['Python 3 challenge programming advent of code AdventOfCode 2018 data structures and algorithms DS&A stack tree graph time complxity space complexity problem solving image processing'],
                 closingLink: {
                     name: 'Advent Of Code',
@@ -54,7 +54,7 @@ export class ProjectsComponent {
             },
             {
                 name: 'Closest Airplane',
-                description: 'Simple Command line progam to return information on the closest inflight airplanes to a user input latitude and longitude, written in C#, utlizing REST APIs from ',
+                description: 'Simple Command line progam to return information on the closest inflight airplanes to a user input latitude and longitude. This project is entirely written in C#, utlizing REST APIs from ',
                 link: 'https://github.com/Jbru95/ClosestAirplane',
                 imagePath: 'assets/closestPlane_screen.png',
                 techs: ['C#', 'REST APIs'],
@@ -70,7 +70,7 @@ export class ProjectsComponent {
                 description: 'HashTable class and small script written in Python 3 to show the powerful constant ( O(1) ) lookup/deletion time of Hash Tables compared to typical python lists, utilizes seperate chaining to deal with collisions when they do occur. Created for Computer Science tutoring/educational purposes.',
                 link: 'https://github.com/Jbru95/HashTableComparison',
                 imagePath: 'assets/python_logo.png',
-                techs: ['Python 3'],
+                techs: ['Python 3', 'DS+A'],
                 searchTerms: ['Python 3', 'Hash Table Comparison', 'Data Structures and Algorithms', 'DS&A', 'constant lookup time complexity'],
                 closingLink: null,
                 isHosted: false
