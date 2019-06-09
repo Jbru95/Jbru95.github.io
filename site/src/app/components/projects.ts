@@ -30,6 +30,16 @@ export class ProjectsComponent {
                 isHosted: true
             },
             {
+                name: 'DocEditor',
+                description: 'Full Stack JavaScript Application using a Node.js and Express.js Back-end and an Angular 7 Front-end. DocEditor is a text document editing/collaborating application, allowing multiple users to edit the same document simultaneously. Uses WebSocket technology via Socket.io rather than typical REST API calls to quickly pass and broadcast data from clients to server and vice-versa.',
+                link: 'https://github.com/Jbru95/DocEditor',
+                imagePath: 'assets/docs_screen.png',
+                techs: ['Angular 7', 'Node.js', 'Express.js', 'Socket.io', 'SCSS', 'HTML', 'Type/JavaScript' ],
+                searchTerms: ['Document', 'docs', 'doceditor', 'text', 'editor', 'websockets', 'socket', 'stack', 'full', 'node', 'express', 'angular', 'script', 'web', 'app'],
+                closingLink: null,
+                isHosted: false
+            },
+            {
                 name: 'Mastermind',
                 description: 'Web version of the classis boardgame, Mastermind. Written in Javascript, utilizing JQuery, Less styles, and Grunt. Pick sets of colored marbles to get closer to your goal. Using the hints provided, can you match the Mastermind?',
                 link: 'https://jbru95.github.io/Mastermind',
