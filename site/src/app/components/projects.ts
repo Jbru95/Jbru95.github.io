@@ -118,13 +118,13 @@ export class ProjectsComponent {
         this.searchedProjectNumber = this.projects.length;
     }
 
-    onSearchKeyUp(): void{
-        this.searchTerm = $('#projectSearchTermInput')[0].value.toLowerCase();
-        if (this.searchTerm == '') {
-            this.projects = this.allProjects;
-        }
-        this.searchedProjectNumber = this.projects.length;
-    }
+    // onSearchKeyUp(): void{
+    //     this.searchTerm = $('#projectSearchTermInput')[0].value.toLowerCase();
+    //     if (this.searchTerm == '') {
+    //         this.projects = this.allProjects;
+    //     }
+    //     this.searchedProjectNumber = this.projects.length;
+    // }
 
     searchProjects(): void {
         this.searchTerm = $('#projectSearchTermInput')[0].value.toLowerCase();
