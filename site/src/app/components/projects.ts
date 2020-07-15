@@ -40,6 +40,26 @@ export class ProjectsComponent {
                 isHosted: false
             },
             {
+                name: 'Baseball Stats',
+                description: 'Backend Services/API for BaseballStats FullStack Application, utilizing SQL Server Tables and Stored Procedures, C# Back-End REST API via WebAPI 2. Contains controllers, services and a full REST API to be consumed by the Baseball Stats Front End Angular Application below. Allows all CRUD operations for adding, updating, deleting, and displaying player information in JSON format.',
+                link: 'https://github.com/Jbru95/BaseballStats',
+                imagePath: 'assets/baseball.jpg',
+                techs: ['C#', '.NET', 'SQL Server', 'Sprocs', 'REST API', 'WebAPI2' ],
+                searchTerms: ['C#', '.NET', 'SQL Server', 'Sprocs', 'REST API', 'WebAPI2', 'stack', 'full', 'app', 'Baseball Stats', 'backend', 'service', 'WebAPI 2', 'Stored Procedures', 'sprocs'],
+                closingLink: null,
+                isHosted: false
+            },
+            {
+                name: 'Baseball Stats Front End',
+                description: 'Front End UI/UX for BaseballStats FullStack Application using Angular 7, Bootstrap 4, and Kendo UI elements to display data from C# backend REST APIs regarding baseball players and their career statistics. Contains modals to Add Update and Delete player and statistic information via an Angular service.',
+                link: 'https://github.com/Jbru95/BaseballStatsFrontEnd',
+                imagePath: 'assets/baseball.jpg',
+                techs: ['Angular 7', 'CSS', 'HTML', 'Bootstrap 4', 'Kendo', 'UI/UX'],
+                searchTerms: ['Angular 7', 'CSS', 'HTML', 'Bootstrap 4', 'Kendo', 'UI/UX', 'Full Stack', 'Web Design', 'Elements', 'Baseball Stats Front End', 'UX UI' ],
+                closingLink: null,
+                isHosted: false
+            },
+            {
                 name: 'Mastermind',
                 description: 'Web version of the classis boardgame, Mastermind. Written in Javascript, utilizing JQuery, Less styles, and Grunt. Pick sets of colored marbles to get closer to your goal. Using the hints provided, can you match the Mastermind?',
                 link: 'https://jbru95.github.io/Mastermind',
@@ -77,7 +97,7 @@ export class ProjectsComponent {
             },
             {
                 name: 'Hash Table Comparison',
-                description: 'HashTable class and small script written in Python 3 to show the powerful constant ( O(1) ) lookup/deletion time of Hash Tables compared to typical python lists, utilizes seperate chaining to deal with collisions when they do occur. Created for Computer Science tutoring/educational purposes.',
+                description: 'HashTable class and small script written in Python 3 to show the powerful constant ( O(1) ) lookup/deletion time of Hash Tables compared to typical python lists, utilizes separate chaining to deal with collisions when they do occur. Created for Computer Science tutoring/educational purposes.',
                 link: 'https://github.com/Jbru95/HashTableComparison',
                 imagePath: 'assets/python_logo.png',
                 techs: ['Python 3', 'DS+A'],
